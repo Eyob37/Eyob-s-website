@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" የእዮብ ምርጡ ዌብሳይት በጥም ደስ የሚል እና አዝናኝ ነው, Eyob Mengste is a 16-year-old programmer from Addis Ababa, Ethiopia, passionate about coding, gaming, and technology. Learn more about his interests and personality.">
+  <meta name="keywords" content="እዮብ, ምርጡ ዌብ , Eyob Mengste, programmer, 16-year-old, Addis Ababa, Ethiopia, programming, Godot Engine, Free Fire, Virgo, My friends, technology, gaming, personal profile">
+  <title>Who Am I?</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff5733;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background-color: #c70039;
+    }
+
+    .details {
+      margin-top: 20px;
+      display: none;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .details span {
+      font-weight: bold;
+      color: #f8c471;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Who Am I?</h1>
+    <p>Hello, my name is <span id="name">Eyob Mengste</span>.</p>
+    <p>I am a <span id="age">16-year-old</span> programmer from <span id="location">Addis Ababa, Ethiopia</span>.</p>
+    <button onclick="revealDetails()">Click to Know More</button>
+    <div class="details" id="details">
+      <p>✨ I love <span>programming</span> and enjoy working on projects with <span>Godot Engine</span>.</p>
+      <p>🎮 In my free time, I play <span>Free Fire</span> and explore new technologies.</p>
+      <p>🌟 My personality is shaped by my <span>Virgo</span> traits—dedicated, thoughtful, and precise.</p>
+      <p>💬 My favorite part of life is connecting with loved ones like <span>My friends</span>, who inspires me daily.</p>
+    </div>
+  </div>
+
+  <script>
+    function revealDetails() {
+      const details = document.getElementById('details');
+      details.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
